@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/TextViewPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Placa" />
+
+        <EditText
+            android:id="@+id/EditTextPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            android:id="@+id/TextViewAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ano de Fabricação" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextAno"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/TextViewMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marca" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextMarca"
+            android:inputType="textCapCharacters"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Modelo"
+            android:id="@+id/TextViewModelo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextModelo"
+            android:inputType="textCapCharacters" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Motor"
+            android:id="@+id/TextViewMotor"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextMotor"
+            android:inputType="numberDecimal" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Salvar"
+                    android:id="@+id/ButtonSalvar"
+                    android:onClick="salvar"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:onClick="limpar"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Limpar"
+                    android:id="@+id/ButtonLimpar"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listagem de Veiculos"
+            android:textAlignment="center"
+            android:id="@+id/TextViewListagem"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listarVeiculos"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
